@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watchable</title>
+
+</head>
+<body>
+    <h1>Movies to watch in 2017</h1>
+    <h2>This collection belongs to {{ name }}</h2>
+
+    <h3>movies : {{ movies }}</h3>
+    <h3>first movie is {{ movies[0] }}</h3>
+    <h3>slicing : {{ movies[1:4] }}</h3>
+
+    {% for movie in movies %}
+        <ul>
+            <li>The movie is {{ movie }}</li>
+        </ul>
+    {% endfor %}
+
+</body>
+</html>
